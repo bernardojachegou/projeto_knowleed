@@ -1,0 +1,115 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    width: 360px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ============= DEV ============= */
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.logo img {
+    width: 300px;
+    height: 250px;
+    margin: 6px auto;
+}
+
+#email, #pw {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    color: #777;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: rgb(243, 238, 238);
+    outline: none;
+    margin-bottom: 6px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.log-button {
+    width: 80%;
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 0;
+    background-color: blue;
+}
+
+.content .button {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#login .button {
+    margin: 24px 0 6px 0;
+    background-color: #00802b;
+}
+
+.log-button a {
+    text-decoration: none;
+    color: black;
+}
+
+#or {
+margin: 12px 0;
+}
+
+#log-face #facebook {
+    margin: 0;
+    background-color: #4267B2;
+}
+
+#log-google #google {
+    margin-top: 6px;
+    background-color: #4285F4;
+}
+
+#sign-up #sign{
+    margin-top: 6px;
+    background-color: #00802b;
+}
+
+/* .log-button .button #logo1,
+.log-button .button #logo2 {
+    background-image: url("./assets/facebook.svg");
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 24px;
+}
+
+.log-button .button #logo2 {
+    background-image: url("./assets/google.svg");
+} */
