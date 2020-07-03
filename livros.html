@@ -34,6 +34,7 @@
                         <h6>Última leitura:</h6>
                         <h2>Chapeuzinho Vermelho</h2>
                         <a href="#">Ver todos os capítulos <i class="fas fa-chevron-right"></i></a>
+                        <a class="btn-quiz" href="leitura.html">Continuar</a>
                     </div>
                     <div class="book-info">
                         <div class="progress-container">
@@ -43,7 +44,7 @@
                             </span>
                         </div>
                         <h2>Capítulo 6</h2>
-                        <a class="btn" href="leitura.html">Continuar</a>
+                        <a id="modal-btn" class="btn" href="#">Responder Quiz</a>
                     </div>
                 </div>
 
@@ -51,7 +52,7 @@
                     <div class="book-preview">
                         <h6>Também na sua estante:</h6>
                         <h2>O Pequeno Príncipe</h2>
-                        <a href="#">Ver todos os capítulos <i class="fas fa-chevron-right"></i></a>
+                        <a class="btn-quiz" href="leitura.html">Continuar</a>
                     </div>
                     <div class="book-info">
                         <div class="progress-container">
@@ -61,7 +62,7 @@
                             </span>
                         </div>
                         <h2>Capítulo 7</h2>
-                        <a class="btn" href="leitura.html">Continuar</a>
+                        <a class="btn" href="#">Responder Quiz</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +126,19 @@
         </section>
 
     </main>
-    <script src="assets/js/perfil.js"></script>
+    <div id="modal-quiz" class="modal-quiz hidden">
+        <a id="close-btn" href="">Fechar Quiz</a>
+        <h1>Pergunta 1:</h1>
+        <h3>Para onde a Chapeuzinho Vermelho estava indo?</h3>
+        <div class="botoes-quiz">
+            <a class="btn-quiz" href="">Para o mercado</a>
+            <a class="btn-quiz" href="">Para a escola</a>
+            <a class="btn-quiz" href="">Para o parque</a>
+            <a class="btn-quiz" href="">Para a casa da vovó</a>
+        </div>
+        
+    </div>
+    <script src="assets/js/livros.js"></script>
 </body>
 
 </html>

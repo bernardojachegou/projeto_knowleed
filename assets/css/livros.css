@@ -473,3 +473,59 @@ main .content {
   position: relative;
   top: 25px;
 }
+
+.btn-quiz {
+  background: linear-gradient(#6a46b9, #422C73);
+  border: 0;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 15px;
+}
+
+.modal-quiz {
+  width: 50vw;
+  height: 50vh;
+  overflow-y: none;
+  position: absolute;
+  top: 30vh;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background-color: #422C73fa;
+}
+
+.modal-quiz h1 {
+  margin: 25px;
+  color: #fff;
+}
+
+.modal-quiz h3 {
+  margin: 0 25px 30px 25px;
+  color: #fff;
+}
+
+.modal-quiz .botoes-quiz {
+  display: grid;
+  margin: 0 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#close-btn {
+  position: relative;
+  color: #fff;
+  left: 83%;
+  top: 5%
+}
