@@ -7,7 +7,8 @@
 }
 
 html {
-    background:#eee;
+    background: #422C73cc;
+    color: #fff;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
@@ -58,7 +59,7 @@ h1{
     text-align: center;
     padding: 15px;
     font-size: 50px;
-    color: #422C73;
+    
 }
 .content{
     padding: 0 200px;
