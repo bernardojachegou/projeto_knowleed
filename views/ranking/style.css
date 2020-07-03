@@ -1,55 +1,192 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    background:#eee;
-    min-height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+  background: #422C73cc;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
-    background: #422C73;
-	background: -webkit-linear-gradient(to right, #422C73, #6a46b9);
-    background: linear-gradient(to right, #6a46b9, #422C73);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border-radius: 10px;
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    width: 850px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 25px;
-    max-width: 100%;
+  background: #422C73;
+  background: -webkit-linear-gradient(to right, #422C73, #6a46b9);
+  background: linear-gradient(to right, #6a46b9, #422C73);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  width: 850px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+  max-width: 100%;
 }
 
 nav a {
-    font-size: 12px;
-    color: #eee;
-    text-decoration: none;
-    padding: 20px;
-    margin: 0 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  font-size: 12px;
+  color: #eee;
+  text-decoration: none;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 nav a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 nav a.logout {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 nav i {
-    font-size: 32px;
-    margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+main .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  /* ==== DEV ==== */
+  /* border: 1px solid black; */
+}
+
+/* PROFILE CARD */
+
+.card {
+  width: 800px;
+  max-width: 90%;
+  height: 150px;
+  background-color: #eee;
+  background: linear-gradient(#eee, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin: 25px auto;
+}
+
+.card h1 {
+  text-align: left;
+  color: #333;
+  font-weight: 300;
+  padding: 10px;
+  margin-left: 150px;
+}
+
+.card .user-card {
+  position: absolute;
+  height: 100%;
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+  width: 150px;
+  float: left;
 }
 
 
+.card .user-card .profile-img {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .user-card .profile-img img {
+  width: 125px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.card .general .stats {
+  font-size: 1.8rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  margin-left: 150px;
+}
+
+.card .general .stats>div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .general .stats i {
+  display: block;
+}
+
+.card .general .stats div.title {
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px 0;
+}
+
+.card .general .stats div.value {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+.card .general .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+
+.place-common-bg {
+  background: linear-gradient(#6a46b9, #422C73);
+}
+
+.place-common-clr {
+  color: #6a46b9;
+}
+
+.place-1st-bg {
+  background: linear-gradient(#dba514, #b78628);
+}
+
+.place-1st-clr {
+  color: #dba514;
+}
+
+.place-2nd-bg {
+  background: linear-gradient(#A19E98, #7F7A6F);
+}
+
+.place-2nd-clr {
+  color:#7F7A6F;
+}
+
+.place-3rd-bg {
+  background: linear-gradient(#a87143, #7f4a00);
+}
+
+.place-3rd-clr {
+  color: #7f4a00;
+}
