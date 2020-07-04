@@ -1,0 +1,30 @@
+{
+  "name": "projeto_knowleed",
+  "version": "1.0.0",
+  "description": "Projeto criado para o desafio da Árvore Educação no Mega Hack 3.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardojachegou/projeto_knowleed.git"
+  },
+  "keywords": [
+    "leitura",
+    "gamificação"
+  ],
+  "author": "William Gonçalves, Michel Bernardo, Thiago Pederzolli, Nayra Cruz, Daniel Meiato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bernardojachegou/projeto_knowleed/issues"
+  },
+  "homepage": "https://github.com/bernardojachegou/projeto_knowleed#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "global": "^4.4.0",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1"
+  }
+}
