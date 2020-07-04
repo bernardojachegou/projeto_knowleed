@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 html {
   background: #422C73cc;
   min-height: 100vh;
@@ -17,14 +21,19 @@ nav {
   background: linear-gradient(to right, #6a46b9, #422C73);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 8px;
-  display: flex;
-  position: relative;
-  justify-content: space-evenly;
-  width: 850px;
-  left: 50%;
-  transform: translateX(-50%);
   margin-top: 25px;
   max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 850px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 nav a {
@@ -44,6 +53,40 @@ nav a:hover {
 
 nav a.logout {
   margin-left: auto;
+}
+
+.nav-mobile {
+  padding: 15px;
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.nav-btn {
+  background-color: #422C73;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  transition: .15s;
+}
+
+.nav-btn:hover {
+ background-color: white;
+  color: #422C73;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: flex;
+  }
 }
 
 nav i {
