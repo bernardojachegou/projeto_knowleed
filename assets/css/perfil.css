@@ -77,7 +77,7 @@ nav a:hover {
 
 @media (min-width: 992px) {
   .nav-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -100,7 +100,7 @@ nav a:hover {
 
 @media (min-width: 992px) {
   .nav-desktop {
-    display: flex;
+    display: flex !important;
   }
 }
 
