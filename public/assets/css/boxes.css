@@ -90,11 +90,20 @@ main .box .half-vert .profile-border .profile-pic {
 }
 
 main .box .half-vert img {
-    height: 25%;
+    height: 20%;
+    margin-top: 5px;
 }
 
 main .box .half-horiz img {
     height: 70%;
+}
+
+main .box .align-right {
+    margin-left: auto;
+}
+
+main .box .align-left {
+    margin-right: auto;
 }
 
 main .box .half-horiz .side {
@@ -242,6 +251,31 @@ main .box .grid-insignias .insignia img.livro-estante {
 
 main .box .grid-insignias .insignia img.livro-estante:hover {
     transform: scale(0.8);
+}
+
+main .box .column {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+main .box .grid-alunos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+main .box .grid-alunos .aluno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .box .grid-alunos .aluno img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 850px) {

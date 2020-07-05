@@ -1,12 +1,18 @@
-const open = document.querySelector(".menubutton")
+var node = document.getElementById('capture');
+var btnDownload = document.getElementById('download');
+btnDownload.onclick = function() {
+node.innerHTML = node.innerHTML
+domtoimage.toBlob(document.getElementById('capture')).then(function(blob) {window.saveAs(blob, 'meu-progresso.png');});
+}
 
-const menu = document.querySelector("#menu")
-const close = document.querySelector(".closebutton")
+const abreRewards = document.getElementById('rewards-btn');
+const fechaRewards = document.getElementById('close-rewards-btn');
+const modalRewards = document.getElementById('modal-rewards');
 
-open.addEventListener("click", () => {
-    menu.classList.remove("hide")
-})
+fechaRewards.addEventListener('click', () => {
+	modalRewards.classList.add("hidden");
+});
 
-close.addEventListener("click", () => {
-    menu.classList.add("hide")
-})
+abreRewards.addEventListener('click', () => {
+	modalRewards.classList.remove("hidden");
+});

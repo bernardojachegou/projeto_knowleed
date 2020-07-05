@@ -53,6 +53,39 @@
     </div>
 </div>
 
+<div id="modal-rewards" class="modal hidden">
+    <div class="header">
+        <a href="" id="close-rewards-btn">Fechar <i class="icofont-close-circled"></i></a>
+    </div>
+    <div class="modal-body">
+        <h3>Confira abaixo as recompensas disponíveis:</h3><br>
+        <div class="reward">
+            <img src="assets/img/trofeu-ouro.png" alt="">
+            <div class="reward-description">
+                <h3>1° Lugar</h3>
+                <p>- Voucher para cinema com 1 acompanhante</p>
+                <p>- Voucher para teatro com 1 acompanhante</p>
+                <p>- Vale presente de R$ 30 em livraria</p>
+            </div>
+        </div>
+        <div class="reward">
+            <img src="assets/img/trofeu-prata.png" alt="">
+            <div class="reward-description">
+                <h3>2° Lugar</h3>
+                <p>- Voucher para teatro com 1 acompanhante</p>
+                <p>- Vale presente de R$ 30 em livraria</p>
+            </div>
+        </div>
+        <div class="reward">
+            <img src="assets/img/trofeu-bronze.png" alt="">
+            <div class="reward-description">
+                <h3>3° Lugar</h3>
+                <p>- Vale presente de R$ 30 em livraria</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <style>
     .modal {
         position: absolute;
@@ -135,5 +168,18 @@
         margin-top: 15px;
         color: var(--violeta);
         background: var(--branco);
+    }
+    #modal-rewards .modal-body .reward {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    #modal-rewards .modal-body .reward img {
+        width: 64px;
+        height: 64px;
+        margin-right: 20px;
+    }
+    #modal-rewards .modal-body .reward .reward-description {
+        display: flex;
+        flex-direction: column;
     }
 </style>
