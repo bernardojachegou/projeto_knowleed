@@ -1,0 +1,103 @@
+{% extends "partials/template.html" %}
+{% block content %}
+<div class="faq">
+
+    <h1 style="text-align: center;">Olá, meu nome é Igor, como posso te ajudar?</h1>
+
+    <img src="/assets/img/igor-violeta.png" alt="logo">
+    <h1>O que é a Knowleed?</h1>
+    <p>A knowleed é uma plataforma Web que conecta estudantes do Ensino Médio ao acervo da Árvore de Livros. Utilizamos
+        de um sistema de gamificação com pontos, conquistas, premiações e compartilhamento para disseminar a
+        importâncioa do ato de ler e incetivar a leitura diária.</p>
+
+    <h1>Como funciona o nosso sistema de gamificação?</h1>
+
+    <h3>Pontuação com atividades</h3>
+    <ul>
+        <li><strong>Leitura:</strong> Fazendo a leitura de livros e respondendo os quizes para validar.</li>
+        <li><strong>Quiz:</strong> Respondendo as questões dos quizes sobre o livro lido.</li>
+        <li><strong>Reviews:</strong> Criando um texto com análise do conteúdo sobre o livro.</li>
+    </ul>
+
+    <h3>Pontuação bônus</h3>
+    <ul>
+        <li><strong>Quiz Perfeita:</strong> Acertando todas as questões de um determinado quiz.</li>
+        <li><strong>Frequência de logins:</strong> Logando na plataforma todos os dias.</li>
+        <li><strong>Níveis:</strong> Recebendo pontos ao fazer as atividades.</li>
+    </ul>
+
+    <p id="more-info"><a href="/conquistas">Mais informações na página: conquistas.</a></p>
+
+    <h1>Mais informações?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi soluta ad voluptas ab nesciunt porro
+        natus non! Ex dolorem soluta voluptatibus deserunt praesentium in, neque facilis laborum nam maxime.</p>
+
+    <style>
+        h1,
+        h3,
+        p,
+        li {
+            color: var(--violeta);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .faq {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 16px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .faq img {
+            width: 125px;
+            height: 125px;
+            margin: 16px 0;
+        }
+
+        .faq ul {
+            margin: 6px 0;
+        }
+
+        .faq li {
+            text-align: left;
+            margin: 6px 0;
+        }
+
+        .faq li strong {
+            text-decoration: underline;
+        }
+
+        .faq h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 16px;
+            text-align: left;
+        }
+
+        .faq h3 {
+            text-align: left;
+        }
+
+        .faq p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: justify;
+            margin: 6px 0;
+        }
+
+        .faq #more-info {
+            font-style: italic;
+        }
+
+        .faq #more-info:hover {
+            text-decoration: underline;
+        }
+
+        .faq h1:first-child {
+            margin: 0;
+        }
+    </style>
+    {% endblock content %}

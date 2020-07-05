@@ -63,6 +63,13 @@ button {
 	transition: transform 80ms ease-in;
 }
 
+.ghost#signIn:hover,
+.ghost#signUp:hover{
+	border: 1px solid #6a46b9;
+	background-color: #FFFFFF;
+	color: #6a46b9;
+}
+
 a.button {
 	border-radius: 8px;
 	border: 1px solid #6a46b9;
@@ -77,6 +84,13 @@ a.button {
 	font-family: Arial;
 }
 
+a.button:hover,
+#buttonSignUp:hover {
+	border: 1px solid #6a46b9;
+	background-color: #FFFFFF;
+	color: #6a46b9;
+}
+
 button:active {
 	transform: scale(0.95);
 }
@@ -89,10 +103,12 @@ button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 	margin-top: 24px;
+	cursor: pointer;
 }
 
 #buttonSignUp {
 	margin-top: 24px;
+	cursor: pointer;
 }
 
 form {

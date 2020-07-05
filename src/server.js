@@ -51,6 +51,10 @@ server.get("/conquistas", (req, res) => {
     return res.render("conquistas.html");
 });
 
+server.get("/faq", (req, res) => {
+    return res.render("faq.html");
+});
+
 // ligando o servidor
 
 server.listen(3000);
