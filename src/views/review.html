@@ -1,101 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/review.css">
-    <link rel="stylesheet" href="assets/ico/icofont.min.css">
-    <link rel="shortcut icon" href="assets/img/owl.svg" type="image/x-icon">
-    <title>knowleed</title>
-</head>
-
-<body>
-    <nav>
-        <a href="perfil.html"><i class="icofont-user-alt-5"></i>Perfil</a>
-        <a href="livros.html"><i class="icofont-book-alt"></i>Livros</a>
-        <a href="leitura.html"><i class="icofont-read-book"></i>Leitura</a>
-        <a href="review.html"><i class="icofont-quill-pen"></i>Reviews</a>
-        <a href="ranking.html"><i class="icofont-trophy-alt"></i>Ranking</a>
-        <a href="conquistas.html"><i class="icofont-badge"></i></i>Conquistas</a>
-        <a href="index.html" class="logout"><i class="icofont-logout"></i></i>Sair</a>
-    </nav>
-        <main>
-            <div class="content">
-                <h1>Review</h1>
-                <img src="assets/img/owl.svg" alt="">
-                <p>Olá! Terminou uma leitura e agora busca por uma nova indicação?<br>
-                    Antes, não gostaria de indicar o livro que terminou de ler para algum amigo?<br>
-                   Você pode <a  class="write">clicar aqui</a> e escrever sua própria resenha sobre o que acabou de ler.<br>               
-                </p>
-                <div class="botao">
-                        <button class="mywrites">Veja aqui seus reviews sobre suas leituras</button>
-                        <br>
-                        <button class="otherwrites">Veja aqui reviews sobre este livro</button>
-                    </div>
-                <div id="myreviews" class="myreview hidewrite">
-                    <h1>Reviews já escritos.</h1>
-                
-                    <div class="mywrite">
-                        <img src="https://a-static.mlcdn.com.br/470x352/livro-o-pequeno-principe/lt2shop2/0000129297/84911bc16c9186cbe753a563310e2a66.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eveniet molestias nisi ut, officiis, incidunt mollitia itaque minima praesentium dolor odit harum nobis at recusandae consequatur explicabo autem fuga eos.</p><br>
-                    </div>
-                    <div class="mywrite">
-                        <img src="https://lojasaraiva.vteximg.com.br/arquivos/ids/12100486/1007942370.jpg?v=637142216975430000" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eveniet molestias nisi ut, officiis, incidunt mollitia itaque minima praesentium dolor odit harum nobis at recusandae consequatur explicabo autem fuga eos.</p>
-                    </div>
-                    <div class="mywrite">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/61ho40YQCkL.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eveniet molestias nisi ut, officiis, incidunt mollitia itaque minima praesentium dolor odit harum nobis at recusandae consequatur explicabo autem fuga eos.</p>
-                    </div>
+{% extends "partials/template.html" %}
+{% block content %}
+    <div class="line line-full">
+        <div class="box">
+            <div class="half-vert half-left box-violeta">
+                <img src="assets/img/livro02.jpg" alt="" class="now-reading-img">
+                <div class="now-reading-links">
+                    <a href="#" id="review-btn-dois">Veja outros reviews</a>
                 </div>
-                <div id="otherreviews" class="otherreview hidewrite">
-                    <h1>Reviews de outros leitores.</h1>
-                
-                    <div class="mywrite">
-                        <img src="https://a-static.mlcdn.com.br/470x352/livro-o-pequeno-principe/lt2shop2/0000129297/84911bc16c9186cbe753a563310e2a66.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eveniet molestias nisi ut, officiis, incidunt mollitia itaque minima praesentium dolor odit harum nobis at recusandae consequatur explicabo autem fuga eos.</p><br>
-                    </div>
-                    <div class="mywrite">
-                        <img src="https://a-static.mlcdn.com.br/470x352/livro-o-pequeno-principe/lt2shop2/0000129297/84911bc16c9186cbe753a563310e2a66.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eveniet molestias nisi ut, officiis, incidunt mollitia itaque minima praesentium dolor odit harum nobis at recusandae consequatur explicabo autem fuga eos.</p>
-                    </div>
-                    <div class="mywrite">
-                        <img src="https://a-static.mlcdn.com.br/470x352/livro-o-pequeno-principe/lt2shop2/0000129297/84911bc16c9186cbe753a563310e2a66.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eveniet molestias nisi ut, officiis, incidunt mollitia itaque minima praesentium dolor odit harum nobis at recusandae consequatur explicabo autem fuga eos.</p>
-                    </div>
-                </div>
-
-              <!--      <h2>Reviews mais acessados</h2>
-
-                   <div class="cards_review">
-                        <div class="cardreview">
-                            <img src="https://a-static.mlcdn.com.br/470x352/livro-o-pequeno-principe/lt2shop2/0000129297/84911bc16c9186cbe753a563310e2a66.jpg" alt="">
-                            <p>Por Thiago Silva</p>
-                        </div>
-                        <div class="cardreview">
-                            <img src="https://lojasaraiva.vteximg.com.br/arquivos/ids/12100486/1007942370.jpg?v=637142216975430000" alt="">
-                            <p>Por Thiago Silva</p>
-                        </div>
-                        <div class="cardreview">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61ho40YQCkL.jpg" alt="">
-                            <p>Por Thiago Silva</p>
-                        </div>                     
-                    </div> 
-            </div> -->
-             
-            
-            
-        </main>
-           <div id="modalwrite" class="hide">
-               <i class="icofont-ui-close"></i>
-                <h1>escreva aqui seu review</h1>
-                <div class="input">
-                    <textarea name="description" cols="135" rows="35"></textarea>
-                    
-                </div>
-                <button>Enviar review</button>
             </div>
-    <script src="assets/js/review.js"></script>        
-</body>
-
-</html>
+            <div class="half-vert half-right box-branco now-reading-description">
+                <img src="assets/img/quiz.svg" alt="">
+                <h4>Review pendente</h4>
+                <h3>Sherlock Holmes<br>O Cão dos Baskerville</h3>
+                <a href="#" id="write-btn-dois">Escrever review</a>
+            </div>
+        </div>
+    </div>
+    <div class="line line-full">
+        <div class="box">
+            <div class="half-vert half-left box-violeta">
+                <img src="assets/img/livro01.jpg" alt="" class="now-reading-img">
+                <div class="now-reading-links">
+                    <a href="#" id="review-btn">Veja outros reviews</a>
+                </div>
+            </div>
+            <div class="half-vert half-right box-branco now-reading-description">
+                <img src="assets/img/quiz.svg" alt="">
+                <h4>Review pendente</h4>
+                <h3>O Torneio dos Céus</h3>
+                <a href="#" id="write-btn">Escrever review</a>
+            </div>
+        </div>
+    </div>
+    {% include "partials/modal.html" %}
+    <script src="assets/js/review.js"></script>
+{% endblock content %}
