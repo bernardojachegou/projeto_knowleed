@@ -49,7 +49,7 @@
         <h3>Escreva seu review sobre o livro. Evite spoilers, para não interferir na experiência dos outros alunos.</h3><br>
         <textarea name="" id="send-text" rows="10"></textarea>
         <p id="send-success" class="hidden"><i>Parabéns! Seu review foi enviado!<br>Após avaliação, você receberá a pontuação correspondente em seu perfil.</i></p>
-        <button id="send-write">Enviar</button>
+        <button class="send-button" id="send-write">Enviar</button>
     </div>
 </div>
 
@@ -112,7 +112,7 @@
     textarea {
         width: 100%;
     }
-    button {
+    .send-button {
         background: var(--violeta);
         color: var(--branco);
         border: none;
@@ -125,7 +125,7 @@
         font-size: 16px;
         transition: background 300ms;
     }
-    button:hover {
+    .send-button:hover {
         color: var(--violeta);
         background: var(--branco);
     }

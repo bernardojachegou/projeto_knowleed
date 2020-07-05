@@ -250,6 +250,8 @@ main .box .grid-insignias .insignia img.livro-estante:hover {
     }
     main {
         width: 100%;
+        margin: 0 5px;
+        padding-right: 10px;
     }
     main .line {
         grid-template-columns: 1fr;
@@ -258,16 +260,33 @@ main .box .grid-insignias .insignia img.livro-estante:hover {
     }
     main .box {
         flex-direction: column;
-        height: auto;
-        max-width: 300px;
+        height: min-content;
+        min-width: 300px;
+        max-width: 400px;
     }
     main .box .half-vert,
     main .box .half-horiz {
-        max-height: 300px;
+        height: auto;
+        max-height: 350px;
         width: 100%;
+    }
+    main .box .half-left {
+        border-radius: 10px 10px 0 0;
+    }
+    main .box .half-right {
+        border-radius: 0 0 10px 10px;
     }
     main .box .grid-livros {
         gap: 20px;
         
+    }
+    main .box .grid-insignias {
+        grid-template-columns: 1fr 1fr;
+    }
+    main .box .grid-insignias .insignia {
+        height: 75px;
+    }
+    main .progress-bar {
+        margin: 10px 0;
     }
 }
