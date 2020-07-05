@@ -20,64 +20,57 @@
             </div>
         </div>
     </div>
-    {# <div class="line">
-        <div class="box">
-            <div class="half-vert half-left box-violeta">
-                <div class="profile-border">
-                    <div class="profile-pic">
+    <div class="line">
+        <div class="box box-horiz">
+            <div class="half-horiz half-top box-violeta">
+                <img src="assets/img/pending.svg" alt="">
+                <div class="side">
+                    <h3>Você tem atividades pendentes</h3>
+                </div>
+            </div>
+            <div class="half-horiz half-bottom box-branco">
+                <div class="grid-insignias pendentes">
+                    <div class="insignia">
+                        <img src="assets/img/quiz.svg" alt="">
+                        <h4>2 Reviews</h4>
+                        <a href="/review">Ver</a>
+                    </div>
+                    <div class="insignia">
+                        <img src="assets/img/review.svg" alt="">
+                        <h4>1 Quiz</h4>
+                        <a href="#" id="quiz-btn-2">Ver</a>
                     </div>
                 </div>
-                <img src="assets/img/level.svg" alt="">
-                <h3>Nível 8</h3>
-            </div>
-            <div class="half-vert half-right box-branco">
-                <img src="assets/img/igor-violeta.png">
-                <p>Bem vinda,</p>
-                <h3>Ana Paula</h3> 
-                <p>Vamos continuar sua leitura de ontem?</p>
-                <a href="/leitura">Continuar</a>
             </div>
         </div>
         <div class="box box-horiz">
             <div class="half-horiz half-top box-violeta">
-                <img src="assets/img/trofeu-ouro.png" alt="">
+                <img src="assets/img/leitura.svg" alt="">
                 <div class="side">
-                    <h3>Conquistas e pontuação</h3>
-                    <a href="/conquistas">Ver todas as conquistas</a>
+                    <h3>Estante Virtual</h3>
+                    <p>Confira seus livros abaixo ou</p>
+                    <a href="#">Encontre novos livros</a>
                 </div>
             </div>
             <div class="half-horiz half-bottom box-branco">
                 <div class="grid-insignias">
                     <div class="insignia">
-                        <img src="assets/img/ponto.svg" alt="">
-                        <h3>1150</h3>
-                        <p>Pontos ganhos</p>
+                        <img src="assets/img/livro01.jpg" alt="" class="livro-estante">
                     </div>
                     <div class="insignia">
-                        <img src="assets/img/leitura.svg" alt="">
-                        <h3>10</h3>
-                        <p>Livros lidos</p>
+                        <img src="assets/img/livro02.jpg" alt="" class="livro-estante">
                     </div>
                     <div class="insignia">
-                        <img src="assets/img/quiz.svg" alt="">
-                        <h3>8</h3>
-                        <p>Reviews escritos</p>
+                        <img src="assets/img/livro03.jpg" alt="" class="livro-estante">
                     </div>
                     <div class="insignia">
-                        <img src="assets/img/review.svg" alt="">
-                        <h3>9</h3>
-                        <p>Quizes completas</p>
                     </div>
                     <div class="insignia">
-                        <img src="assets/img/login.svg" alt="">
-                        <h3>21</h3>
-                        <p>Dias seguidos</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div> #}
+    </div>
     {% include "partials/modal.html" %}
     <script src="assets/js/livros.js"></script>
-
 {% endblock content %}

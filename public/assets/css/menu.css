@@ -1,7 +1,6 @@
 nav {
     background: var(--violeta);
     background: var(--degrade-violeta);
-    box-shadow: var(--sombra-box);
     border-radius: 10px;
     margin-top: 25px;
     max-width: 100%;

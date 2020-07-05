@@ -7,7 +7,6 @@
     --transparencia-bra: #f0f0f0cc;
     --degrade-violeta: linear-gradient(#6a46b9, #422C73);
     --degrade-branco: linear-gradient(#f8f8f8, #fff); 
-    --sombra-box: 0 7px 14px rgba(0, 0, 0, 0.20), 0 5px 5px rgba(0, 0, 0, 0.20);
 }
 
 * {
@@ -62,3 +61,6 @@ main .line-full {
     grid-template-columns: 1fr;
 }
 
+embed {
+    margin-top: 25px;
+}

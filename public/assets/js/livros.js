@@ -23,6 +23,7 @@ abreReviews.addEventListener('click', () => {
 });
 
 const abreQuiz = document.getElementById('quiz-btn');
+const abreQuizDois = document.getElementById('quiz-btn-2');
 const fechaQuiz = document.getElementById('close-quiz-btn');
 const modalQuiz = document.getElementById('modal-quiz');
 
@@ -31,5 +32,9 @@ fechaQuiz.addEventListener('click', () => {
 });
 
 abreQuiz.addEventListener('click', () => {
+	modalQuiz.classList.remove("hidden");
+});
+
+abreQuizDois.addEventListener('click', () => {
 	modalQuiz.classList.remove("hidden");
 });

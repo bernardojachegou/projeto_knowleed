@@ -94,7 +94,7 @@ main .box .half-vert img {
 }
 
 main .box .half-horiz img {
-    width: 40%;
+    height: 70%;
 }
 
 main .box .half-horiz .side {
@@ -219,4 +219,27 @@ main .box .now-reading-description .progress-fill {
     width: 105px;
     border-radius: 5px;
     background: var(--violeta);
+}
+
+main .box .grid-insignias.pendentes {
+    grid-template-columns: 1fr 1fr;
+}
+
+main .box .grid-insignias.pendentes h4 {
+    margin: 10px auto 5px auto;
+}
+
+main .box .grid-insignias.pendentes a {
+    padding: 2px 10px;
+    font-size: 11px;
+}
+
+main .box .grid-insignias .insignia img.livro-estante {
+    width: 100%;
+    height: 100%;
+    transform: none;
+}
+
+main .box .grid-insignias .insignia img.livro-estante:hover {
+    transform: scale(0.8);
 }

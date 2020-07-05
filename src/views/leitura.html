@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/ico/icofont.min.css">
-    <link rel="stylesheet" href="assets/css/leitura.css">
-    <link rel="shortcut icon" href="assets/img/owl.svg" type="image/x-icon">
-    <title>knowleed</title>
-</head>
-
-<body>
-    <nav>
-        <a href="perfil.html"><i class="icofont-user-alt-5"></i>Perfil</a>
-        <a href="livros.html"><i class="icofont-book-alt"></i>Livros</a>
-        <a href="leitura.html"><i class="icofont-read-book"></i>Leitura</a>
-        <a href="review.html"><i class="icofont-quill-pen"></i>Reviews</a>
-        <a href="ranking.html"><i class="icofont-trophy-alt"></i>Ranking</a>
-        <a href="conquistas.html"><i class="icofont-badge"></i></i>Conquistas</a>
-        <a href="index.html" class="logout"><i class="icofont-logout"></i></i>Sair</a>
-    </nav>
-    <main>
-        <section class="content">
-
-            <div class="subcontent-one">
-
-                
-            </div>
-            <iframe src="assets/pdf/00797.pdf">
-
-        </section>
-
-    </main>
-    <script src="assets/js/leitura.js"></script>
-</body>
-
-</html>
+{% extends "partials/template.html" %}
+{% block content %}
+    <embed src="assets/pdf/0001.pdf" width="100%" height="1000px">
+{% endblock content %}
