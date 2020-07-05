@@ -243,3 +243,31 @@ main .box .grid-insignias .insignia img.livro-estante {
 main .box .grid-insignias .insignia img.livro-estante:hover {
     transform: scale(0.8);
 }
+
+@media (max-width: 850px) {
+    * {
+        overflow-x: none;
+    }
+    main {
+        width: 100%;
+    }
+    main .line {
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%;
+    }
+    main .box {
+        flex-direction: column;
+        height: auto;
+        max-width: 300px;
+    }
+    main .box .half-vert,
+    main .box .half-horiz {
+        max-height: 300px;
+        width: 100%;
+    }
+    main .box .grid-livros {
+        gap: 20px;
+        
+    }
+}

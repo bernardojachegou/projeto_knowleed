@@ -6,7 +6,7 @@ nav {
     max-width: 100%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 850px) {
     nav {
         margin-left: auto;
         margin-right: auto;
@@ -26,7 +26,7 @@ nav a {
     display: flex;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 850px) {
     nav a {
         flex-direction: column;
     }
@@ -35,7 +35,7 @@ nav a {
 nav a:not(:last-child) {
     border-bottom: 1px solid var(--branco);
 }
-@media (min-width: 992px) {
+@media (min-width: 850px) {
     nav a:not(:last-child) {
         border-bottom: none;
     }
@@ -44,10 +44,10 @@ nav a:not(:last-child) {
 nav a:hover {
     color: var(--violeta);
     background: var(--branco);
-    border-radius: 10px;
+    
 }
 
-@media (min-width: 992px) {
+@media (min-width: 850px) {
     nav a.logout {
         margin-left: auto;
     }
@@ -58,7 +58,7 @@ nav a:hover {
     text-align: right;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 850px) {
     .nav-mobile {
         display: none !important;
     }
@@ -81,20 +81,20 @@ nav a:hover {
     display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 850px) {
     .nav-desktop {
         display: flex !important;
     }
 }
 
 nav i {
-    font-size: 22px; 
+    font-size: 20px; 
     margin-right: 15px; 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 850px) {
     nav i {
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 10px;
         margin-right: 0;
     }
