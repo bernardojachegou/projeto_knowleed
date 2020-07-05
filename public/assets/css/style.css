@@ -1,3 +1,5 @@
+/* ESTILOS PADRÃO DAS PÁGINAS */
+
 :root {
     --violeta: #422c73;
     --branco: #f0f0f0;
@@ -8,19 +10,43 @@
     --sombra-box: 0 7px 14px rgba(0, 0, 0, 0.20), 0 5px 5px rgba(0, 0, 0, 0.20);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*::selection {
+    background: var(--violeta);
+    color: var(--branco);
+}
+
 html {
     font-family: 'Lato', sans-serif;
+    background: var(--transparencia-vio);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+p, a {
+    font-size: 14px;
+}
+
+a {
+    color: var(--violeta);
+    text-decoration: none;
+}
+
+/* ESTRUTURA DE LAYOUT DAS PÁGINAS */
+
 main {
-    width: 720px;
+    width: 850px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
 }
 
 main .line {
@@ -28,45 +54,11 @@ main .line {
     display: grid;
     margin-top: 25px;
     grid-template-columns: 1fr 1fr;
-    gap: 25px
+    gap: 25px;
+    height: 300px;
 }
 
-main .box {
-    border-radius: 10px;
-    height: 250px;
-    width: 100%;
-    display: flex;
+main .line-full {
+    grid-template-columns: 1fr;
 }
 
-main .box-violeta {
-    background: var(--degrade-violeta);
-    color: var(--branco);
-}
-
-main .box-branco {
-    background: var(--degrade-branco);
-    color: var(--violeta);
-}
-
-main .box .half-vert-left {
-    width: 50%;
-    height: 100%;
-    border-radius: 10px 0 0 10px;
-    padding: 25px;
-}
-
-main .box .half-vert-right {
-    width: 50%;
-    height: 100%;
-    border-radius: 0 10px 10px 0;
-    padding: 25px;
-}
-
-main .box h1,
-main .box h2,
-main .box h3,
-main .box h4,
-main .box h5,
-main .box h6 {
-    margin-bottom: 15px;
-}

@@ -1,0 +1,222 @@
+/* ESTRUTURA DOS BOXES DAS GRIDS */
+
+main .box {
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+main .box-horiz {
+    flex-direction: column;
+}
+
+main .box-violeta {
+    background: var(--degrade-violeta);
+    color: var(--branco);
+}
+
+main .box-branco {
+    background: var(--degrade-branco);
+    color: var(--violeta);
+}
+
+main .box .half-vert {
+    width: 50%;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .box .half-left {
+    border-radius: 10px 0 0 10px;
+}
+
+main .box .half-right {
+    border-radius: 0 10px 10px 0;
+}
+
+main .box .half-horiz {
+    height: 50%;
+    padding: 25px;
+    align-items: center;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+main .box .half-top {
+    border-radius: 10px 10px 0 0;
+}
+
+main .box .half-bottom {
+    border-radius: 0 0 10px 10px;
+}
+
+/* CONTEÚDOS INTERNOS DOS BOXES */
+
+main .box h1,
+main .box h2,
+main .box h3,
+main .box h4,
+main .box h5,
+main .box h6 {
+    margin-bottom: 15px;
+}
+
+main .box .half-vert .profile-border {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--branco);
+    margin-bottom: 10px;
+}
+
+main .box .half-vert .profile-border .profile-pic {
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    background: url(../img/profile.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+main .box .half-vert img {
+    height: 25%;
+}
+
+main .box .half-horiz img {
+    width: 40%;
+}
+
+main .box .half-horiz .side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: space-around;
+}
+
+main .box .grid-insignias {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+main .box .grid-insignias .insignia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .box .grid-insignias .insignia img {
+    width: 50%;
+    height: 50%;
+}
+main .box .grid-insignias .insignia p {
+    font-size: 12px;
+}
+
+main .box .grid-insignias .insignia h3 {
+    margin-bottom: 0;
+}
+
+main .box img {
+    transition: transform 400ms;
+}
+
+main .box img:hover {
+    transform: rotate(30deg);
+    transition: 400ms;
+}
+
+main .box a {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+main .box .box-violeta a {
+    color: var(--branco);
+}
+
+main .box a:hover {
+    background: var(--violeta);
+    color: var(--branco);
+    transition: 300ms;
+}
+
+main .box .box-violeta a:hover {
+    color: var(--violeta);
+    background: var(--branco);
+    transition: 300ms;
+}
+
+main .box .grid-livros {
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto 0;
+    gap: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+main .box .grid-livros img {
+    padding: 5px auto;
+    height: 100%;
+    transform: none;
+}
+
+main .box .grid-livros img:hover {
+    transform: scale(0.8);
+}
+
+main .box img.now-reading-img {
+    height: 80%;
+    transform: none;
+}
+
+main .box img.now-reading-img:hover {
+    height: 80%;
+    transform: scale(1.2);
+}
+
+main .box .now-reading-links {
+    display: flex;
+}
+
+main .box a + a {
+    margin-left: 15px;
+}
+
+main .box .now-reading-description {
+    align-items: flex-start;
+    text-align: left;
+}
+
+main .box .now-reading-description .progress-bar {
+    height: 10px;
+    width: 150px;
+    border-radius: 5px;
+    background: #999;
+}
+
+main .box .now-reading-description .progress-fill {
+    height: 10px;
+    width: 105px;
+    border-radius: 5px;
+    background: var(--violeta);
+}
