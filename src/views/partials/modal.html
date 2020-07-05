@@ -86,6 +86,70 @@
     </div>
 </div>
 
+<div id="modal-points" class="modal hidden">
+    <div class="header">
+        <a href="" id="close-points-btn">Fechar <i class="icofont-close-circled"></i></a>
+    </div>
+    <div class="modal-body">
+        <h3>Pontuações em atividades:</h3><br>
+        <div class="reward">
+            <img src="assets/img/leitura.svg" alt="">
+            <div class="reward-description">
+                <h3>Leitura</h3>
+                <p><b>50 pontos</b></p>
+                <p><i>Validada com pelo menos 70% de acerto nas quizes.</i></p>
+            </div>
+        </div>
+        <div class="reward">
+            <img src="assets/img/review.svg" alt="">
+            <div class="reward-description">
+                <h3>Quiz</h3>
+                <p><b>Individual - até 10 pontos (2 pontos por resposta certa)<br></b></p>
+            </div>
+        </div>
+        <div class="reward">
+            <img src="assets/img/quiz.svg" alt="">
+            <div class="reward-description">
+                <h3>Review</h3>
+                <p><b>Até 50 pontos</b></p>
+                <p><i>Conforme avaliação do professor.</i></p>
+            </div>
+        </div>
+        <h3>Pontuações bônus:</h3><br>
+        <div class="reward">
+            <img src="assets/img/level.svg" alt="">
+            <div class="reward-description">
+                <h3>Quiz Perfeita</h3>
+                <p><b>50 pontos</b></p>
+                <p><i>Acertar todas as quizes do livro</i></p>
+                <h3><br>Dia seguido de login</h3>
+                <p><b>10 pontos / dia</b></p>
+                <p><i>Acertar todas as quizes do livro.</i></p>
+                <h3><br>Níveis</h3>
+                <p><b>Alcance 200 pontos para o Nível 2</b></p>
+                <p><i>Bonificação de 20 pontos.</i></p>
+                <p><b>Alcance 400 pontos para o Nível 3</b></p>
+                <p><i>Bonificação de 30 pontos.</i></p>
+                <p><b>Alcance 600 pontos para o Nível 4</b></p>
+                <p><i>Bonificação de 40 pontos.</i></p>
+                <p><b>Alcance 800 pontos para o Nível 5</b></p>
+                <p><i>Bonificação de 50 pontos.</i></p>
+                <p><b>Alcance 1040 pontos para o Nível 6</b></p>
+                <p><i>Bonificação de 60 pontos.</i></p>
+                <p><b>Alcance 1280 pontos para o Nível 7</b></p>
+                <p><i>Bonificação de 70 pontos.</i></p>
+                <p><b>Alcance 1520 pontos para o Nível 8</b></p>
+                <p><i>Bonificação de 80 pontos.</i></p>
+                <p><b>Alcance 1760 pontos para o Nível 9</b></p>
+                <p><i>Bonificação de 90 pontos.</i></p>
+                <p><b>Alcance 2000 pontos para o Nível 10</b></p>
+                <p><i>Bonificação de 100 pontos.</i></p>
+            </div>
+        </div>
+        <p><i>A bonificação por nível considera apenas os pontos em atividades e não os bônus.</i></p>
+    </div>
+</div>
+
 <style>
     .modal {
         position: absolute;
@@ -169,17 +233,21 @@
         color: var(--violeta);
         background: var(--branco);
     }
-    #modal-rewards .modal-body .reward {
+    #modal-rewards .modal-body .reward,
+    #modal-points .modal-body .reward {
         display: flex;
         margin-bottom: 30px;
     }
-    #modal-rewards .modal-body .reward img {
+    #modal-rewards .modal-body .reward img,
+    #modal-points .modal-body .reward img {
         width: 64px;
         height: 64px;
         margin-right: 20px;
     }
-    #modal-rewards .modal-body .reward .reward-description {
+    #modal-rewards .modal-body .reward .reward-description,
+    #modal-points .modal-body .reward .reward-description {
         display: flex;
         flex-direction: column;
     }
+    
 </style>
