@@ -22,8 +22,8 @@ abreReviews.addEventListener('click', () => {
 	modalReviews.classList.remove("hidden");
 });
 
-const abreQuiz = document.getElementById('modal-btn');
-const fechaQuiz = document.getElementById('close-btn');
+const abreQuiz = document.getElementById('quiz-btn');
+const fechaQuiz = document.getElementById('close-quiz-btn');
 const modalQuiz = document.getElementById('modal-quiz');
 
 fechaQuiz.addEventListener('click', () => {

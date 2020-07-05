@@ -21,7 +21,24 @@
     </div>
 </div>
 <div id="modal-quiz" class="modal hidden">
-
+    <div class="header">
+        <a href="" id="close-quiz-btn">Fechar <i class="icofont-close-circled"></i></a>
+    </div>
+    <div class="modal-body">
+        <h2>Escolha um capítulo e responda a quiz:</h2><br>
+        <div class="grid-quiz">
+            <a href="#" class="checked">Capítulo 1<br><i class="icofont-check-circled"> </i>Concluído</a>
+            <a href="#" class="checked">Capítulo 2<br><i class="icofont-check-circled"> </i>Concluído</a>
+            <a href="#" class="checked">Capítulo 3<br><i class="icofont-check-circled"> </i>Concluído</a>
+            <a href="#" class="checked">Capítulo 4<br><i class="icofont-check-circled"> </i>Concluído</a>
+            <a href="#" class="checked">Capítulo 5<br><i class="icofont-check-circled"> </i>Concluído</a>
+            <a href="#">Capítulo 6<br><i class="icofont-hand-up"></i> Responda agora</a>
+            <a href="#" class="checked">Capítulo 7<br><i class="icofont-book"></i> Termine o capítulo</a>
+            <a href="#" class="checked">Capítulo 8<br><i class="icofont-book"></i> Termine o capítulo</a>
+            <a href="#" class="checked">Capítulo 9<br><i class="icofont-book"></i> Termine o capítulo</a>
+            <a href="#" class="checked">Capítulo 10<br><i class="icofont-book"></i> Termine o capítulo</a>
+        </div>
+    </div>
 </div>
 
 <style>
@@ -56,8 +73,26 @@
     .modal .modal-body {
         width: 600px;
         max-width: 90%;
-        background: var(--transparencia-bra);
+        background: var(--violeta);
+        color: var(--branco);
         margin: 50px auto;
         padding: 25px;
+    }
+    .modal .modal-body .grid-quiz {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+    .modal .modal-body .grid-quiz a {
+        color: var(--branco);
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 20px 0;
+        font-weight: 600;
+    }
+    .modal .modal-body .grid-quiz a.checked {
+        color: var(--transparencia-bra);
+        font-weight: 300;
     }
 </style>
