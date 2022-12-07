@@ -22,7 +22,7 @@
     "url": "https://github.com/bernardojachegou/projeto_knowleed/issues"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "global": "^4.4.0",
     "nodemon": "^2.0.4",
     "nunjucks": "^3.2.1"
